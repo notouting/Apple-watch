@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @font-face {
     font-display: swap;
     font-family: 'Roboto';
@@ -20,21 +27,28 @@
 }
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 html {
     height: 100%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
 body {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-family: var(--fontFamily);
     font-weight: var(--fontWeight);
     font-size: var(--fontSize);
@@ -44,7 +58,8 @@ body {
 
 .visually-hidden {
     clip: rect(0 0 0 0);
-    clip-path: inset(50%);
+    -webkit-clip-path: inset(50%);
+            clip-path: inset(50%);
     height: 1px;
     overflow: hidden;
     position: absolute;
@@ -53,7 +68,9 @@ body {
 }
 
 main {
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
 }
 
 .container {
@@ -75,12 +92,18 @@ a {
 .header-wrapper,
 .header-nav-wrapper,
 .header-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .header-wrapper {
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .header-input {
@@ -137,6 +160,7 @@ a {
 }
 
 @media (-webkit-min-device-pixel-ratio: 2),
+(-o-min-device-pixel-ratio: 2/1),
 (min-resolution: 192dpi) {
     .box {
         background: url(../images/runners1@2x.jpg) no-repeat;
