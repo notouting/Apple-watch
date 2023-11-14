@@ -131,3 +131,59 @@ a {
     width: 38px;
     height: 3px;
 }
+
+/* sect3 start */
+.sect-3 {
+    padding: 70px 0;
+}
+
+.sect3-div {
+    width: 490px;
+    height: 387px;
+    padding-top: 100px;
+}
+
+.sect3-p {
+    margin: 30px 0;
+    color: #777;
+    font-family: var(--fontFamily);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    border-left: 3px solid #888;
+    height: 96px;
+    padding-left: 38px;
+}
+
+.sect3-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sect3-h2 {
+    color: #000;
+    font-family: var(--fontFamily);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+.sect3-btn {
+    width: 260px;
+    height: 51px;
+    background-color: #EA625C;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-family: var(--fontFamily);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+.sect3-hero-img {
+    width: 400px;
+    height: 600px;
+}
